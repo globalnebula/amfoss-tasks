@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Extension",
+  "version": "1.0",
+  "description": "Get real-time weather data for your location.",
+  "permissions": ["geolocation", "https://api.openweathermap.org/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"  
+  },
+  "externally_connectable": {
+    "matches": ["https://api.openweathermap.org/*"]
+  },
+  "permissions": ["storage", "geolocation"],
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID",
+    "scopes": ["https://www.googleapis.com/auth/calendar.readonly"]
+  },
+  "oauth2": {
+    "client_id": "YOUR_CLIENT_ID",
+    "scopes": ["https://www.googleapis.com/auth/calendar.readonly"]
+  },
+  "key": "31ab54d8e606edd3be43fe33b50bb91f"
+}
