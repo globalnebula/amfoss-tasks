@@ -1,0 +1,3 @@
+[submodule "task-02/webportfolio"]
+	path = task-02/webportfolio
+	url = https://github.com/globalnebula/kunalachintya.git
