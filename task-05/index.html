@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rowdies' rel='stylesheet'>
+    <title>Imagine Dragons</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/backdrop.png'); /* Updated background image URL */
+            background-size: cover; /* Scales the image to fit within the element */
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 9px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+        }
+
+        .we-container{
+            margin-top: 382px;
+            margin-bottom: -286px;
+            align-self: center;
+        }
+
+        .we{
+            font-family: 'Rowdies';
+            font-size: 30px;
+            color: white;
+        }
+
+        /* Image Logo Styles */
+        .logo img {
+            width: 30px; /* Updated logo image width to 30px */
+            height: auto;
+        }
+
+        .social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 15px; /* Adjust the spacing between social icons */
+        }
+
+        /* CSS to make the Spotify icon smaller */
+        .social-icons .spotify-icon {
+            width: 30px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: auto;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            align-self: center;
+        }
+
+        /* Button Style */
+        .explore-button {
+            align-self: center;
+            margin-top: 650px; /* Updated margin-top value to 500px */
+            padding: 8px 17px;
+            background-color: #2BDAE1; /* Updated button background color */
+            color: black; /* Updated text color to black */
+            font-size: 20px; /* Font size */
+            font-family: 'Bebas Neue', sans-serif; /* Specify the Bebas Neue font */
+            border: none;
+            border-radius: 5px; /* Reduced border-radius to make the button smaller */
+            cursor: pointer;
+            text-decoration: none; /* Remove underlines for links */
+            display: flex;
+            align-items: center; /* Align text and arrow vertically */
+            width: auto; /* Allow the button to adjust its width based on content */
+            height: auto;
+        }
+
+        /* Image Style */
+        .page-image-container {
+            text-align: center; /* Center the image horizontally */
+            margin-top: 275px; /* Add space above the image */
+            margin-bottom: -632px; /* Add space below the image */
+        }
+
+        .page-image {
+            max-width: 100%; /* Limit the maximum image width */
+            height: auto;
+        }
+
+        /* Arrow icon style */
+        .arrow-icon {
+            width: 38px; /* Increase the arrow's width */
+            height: auto;
+            margin-left: 1px; /* Add space between text and arrow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/navbar/logo.png" alt="Imagine Dragons"> <!-- Updated logo image URL -->
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=ufFfiKDsQTCeqa2xV2l2kg"><img class="spotify-icon" src="assets/navbar/spotify.png" alt="Spotify"></a></li> <!-- Smaller Spotify icon -->
+            <li><a href="https://www.youtube.com/user/ImagineDragons"><img src="assets/navbar/youtube.svg" alt="Youtube"></a></li>
+            <li><a href="https://twitter.com/Imaginedragons"><img src="assets/navbar/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/imaginedragons/"><img src="assets/navbar/instagram.svg" alt="Instagram"></a></li>
+        </ul>
+    </div>
+
+    <div class = "we-container">
+        <h1 class = "we">WE ARE</h1>
+    </div>
+
+    <div class="page-image-container">
+        <img class="page-image" src="assets/id_text.png" alt="Imagine Dragons">
+    </div>
+
+    
+    <!-- Explore Shop Button -->
+    <a class="explore-button" href="shop.html">Explore Shop<img class="arrow-icon" src="assets/arrow-next.svg" alt="Arrow"></a>
+
+</body>
+</html>

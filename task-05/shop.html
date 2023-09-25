@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rowdies' rel='stylesheet'>
+    <title>Imagine Dragons Store</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d1335;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 9px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+        }
+
+        /* Image Logo Styles */
+        .logo img {
+            width: 30px; /* Updated logo image width to 30px */
+            height: auto;
+        }
+
+        .social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 15px; /* Adjust the spacing between social icons */
+        }
+
+        /* CSS to make the Spotify icon smaller */
+        .social-icons .spotify-icon {
+            width: 30px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: auto;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            align-self: center;
+        }
+
+        /* Product Cards Container */
+        .product-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 3 columns */
+            grid-gap: 25px; /* Gap between cards */
+            padding: 18px;
+            align-self: center;
+        }
+
+        /* Product Card Styles */
+        .product-card {
+            position: relative; /* Added relative positioning */
+            background-color: #0B0B21;
+            border-radius: 18px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px; /* Reduced padding for smaller cards */
+            width: 109px;
+            height: 189px;
+            text-align: center;
+            transform: scale(1); /* Initial scale for hover effect */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition for floating effect and box shadow */
+        }
+
+        .product-image {
+            max-width: auto; /* Reduced image size */
+            height: 124px;
+            margin-top: -7px;
+            margin-bottom: 5px; /* Adjusted margin to reduce space */
+            align-content: center;
+        }
+
+        .product-image-a {
+            max-width: auto; /* Reduced image size */
+            height: 64px;
+            margin-top: 28px;
+            margin-bottom: 5px; /* Adjusted margin to reduce space */
+            align-content: center;
+        }
+
+        .product-title-a {
+            font-size: 19px; /* Reduced font size */
+            margin-top: 23px; /* Adjusted margin to reduce space */
+            margin-bottom: -4px; /* Adjusted margin to reduce space */
+            color: white;
+            font-family: 'Bebas Neue', sans-serif; /* Specify the Bebas Neue font */
+            text-align: left;
+        }
+
+        .product-title {
+            font-size: 19px; /* Reduced font size */
+            margin-top: -2px; /* Adjusted margin to reduce space */
+            margin-bottom: -4px; /* Adjusted margin to reduce space */
+            color: white;
+            font-family: 'Bebas Neue', sans-serif; /* Specify the Bebas Neue font */
+            text-align: left;
+        }
+
+        .product-price {
+            font-size: 18px; /* Reduced font size */
+            margin-top: 5px; /* Adjusted margin to reduce space */
+            color: white;
+            font-family: 'Bebas Neue', sans-serif; /* Specify the Bebas Neue font */
+            text-align: left;
+        }
+
+        /* Blue Strip Styles */
+        .product-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px; /* Height of the blue strip */
+            background-color: #3345AB; /* Blue color for the strip */
+            border-radius: 0 0 15px 15px;
+        }
+
+        /* Shuffle Animation */
+        @keyframes shuffle {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Hover Effects */
+        .product-card:hover {
+            transform: scale(1.1); /* Scale up on hover */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+            transition: transform 0.3s ease-in-out, box-shadow 0.9s ease-in-out; /* Smooth transition on hover */
+            animation: float 1s ease-in-out infinite alternate; /* Float animation on hover */
+        }
+
+        /* Float Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+           <a href = index.html><img src="assets/navbar/logo.png" alt="Imagine Dragons"></a>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=ufFfiKDsQTCeqa2xV2l2kg"><img class="spotify-icon" src="assets/navbar/spotify.png" alt="Spotify"></a></li>
+            <li><a href="https://www.youtube.com/user/ImagineDragons"><img src="assets/navbar/youtube.svg" alt="Youtube"></a></li>
+            <li><a href="https://twitter.com/Imaginedragons"><img src="assets/navbar/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/imaginedragons/"><img src="assets/navbar/instagram.svg" alt="Instagram"></a></li>
+        </ul>
+    </div>
+
+    <!-- Product Cards -->
+    <div class="product-cards">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/origins_vinyl.png" alt="Product 1">
+            <div class="product-title">Origins Vinyl + Digital album</div>
+            <div class="product-price">₹ 2800</div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/floral_hoodie.png" alt="Product 2">
+            <div class="product-title">Floral Logo Tan hoodie</div>
+            <div class="product-price">₹ 3200</div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/next_to_me_poster.png" alt="Product 3">
+            <div class="product-title">Next to me poster</div>
+            <div class="product-price">₹ 1800</div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/cap.png" alt="Product 4">
+            <div class="product-title">Vegas Trucker hat</div>
+            <div class="product-price">₹ 1500</div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="product-card">
+            <img class="product-image-a" src="assets/item_cards/imagine_poster.png" alt="Product 5">
+            <div class="product-title-a">Imagine A1 poster</div>
+            <div class="product-price">₹ 1800</div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/mercury_I.png" alt="Product 6">
+            <div class="product-title">Mercury-Act I Deluxe CD</div>
+            <div class="product-price">₹ 1800</div>
+        </div>
+
+        <!-- Product Card 7 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/keychain.png" alt="Product 7">
+            <div class="product-title">Imagine Dragons Keychain</div>
+            <div class="product-price">₹ 600</div>
+        </div>
+
+        <!-- Product Card 8 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/vintage_hoodie.png" alt="Product 8">
+            <div class="product-title">Vintage Graphic Hoodie</div>
+            <div class="product-price">₹ 3400</div>
+        </div>
+
+        <!-- Product Card 9 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/mercury_II.png" alt="Product 9">
+            <div class="product-title">Mercury Act II Vinyl</div>
+            <div class="product-price">₹ 2200</div>
+        </div>
+
+        <!-- Product Card 10 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/bottle.png" alt="Product 10">
+            <div class="product-title">Vinatge Vegas Water bottle </div>
+            <div class="product-price">₹ 2000</div>
+        </div>
+
+        <!-- Product Card 11 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/cassette.png" alt="Product 11">
+            <div class="product-title">Night Visions cassette</div>
+            <div class="product-price">₹ 1100</div>
+        </div>
+
+        <!-- Product Card 12 -->
+        <div class="product-card">
+            <img class="product-image" src="assets/item_cards/tote.png" alt="Product 12">
+            <div class="product-title">Bones Treat <br> Bag</div>
+            <div class="product-price">₹ 1500</div>
+        </div>
+    </div>
+
+</body>
+</html>
