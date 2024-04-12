@@ -1,0 +1,2 @@
+# VIM
+Well this was the easiest task.I just went through the instructions and proceeded with what they asked me to do.At the end i kind of messed up a bit cause i thought it was saved but actually it was not.So i had to redo the task again.But this one was valuable i think,learnt how to operate easily and efficiently in a terminal like when editing files.I should practice more to look cool infront of my friends and family though.

@@ -1,0 +1,6 @@
+# Poke-Search!
+This was a very interesting task so I thought of starting with this,I knew it wasn't going to be that easy.Initially,I started doing it and it felt fine for a while,but then I was bombarded with some timeout error whenever i tried to capture a pokemon.Well later figured out with the help of a mentor that it wasn't responding because Jio,for some reason was blocking that website.Later changed to airtel and it worked fine.
+Started with adding the background image and displaying the stats by recieving stuff from the API.After all that i worked on the css like styling the buttons,"enter" "previous" "next" the way it was displayed in the demo that u gave in the github repo.
+Displaying the pokemons that i captured in a new window was slightly a tricky task.Had to work for a lot of time figuring out that part.And after completing almost the whole task,i felt the pictures i have used are like low quality pics and i have to use the official artwork.So changed my codes according to that and that consumed a bit of my time too.
+The biggest blocker for me was the point where i had to hide the background on clicking the enter button when displaying stats.Worked alot on it but it didnt work.Tried 3 methods for hiding that background but unfortunately no change.
+Will edit my readme file if i manage to do that.
